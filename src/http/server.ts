@@ -1,7 +1,7 @@
 import fastify from "fastify";
-import { createPoll } from "./create-poll";
-import { getPoll } from "./get-polls";
-import { voteOnPoll } from "./vote-on-poll";
+import { createPoll } from "./routes/create-poll";
+import { getPoll } from "./routes/get-polls";
+import { voteOnPoll } from "./routes/vote-on-poll";
 import cookie from "@fastify/cookie";
 
 
