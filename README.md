@@ -28,13 +28,8 @@ Create a new poll.
 
 ```json
 {
-  "title": "Qual a melhor linguagem de programação?",
-  "options": [
-    "JavaScript",
-    "Java",
-    "PHP",
-    "C#"
-  ]
+    "title": "Qual melhor framework Node.js",
+    "options": ["Fastify", "Express", "NestJS", "HapiJS"]
 }
 ```
 
@@ -42,7 +37,7 @@ Create a new poll.
 
 ```json
 {
-  "pollId": "194cef63-2ccf-46a3-aad1-aa94b2bc89b0"
+  "pollId": "a4e5688c-8e59-4439-a359-396b28599fd2"
 }
 ```
 
@@ -54,32 +49,32 @@ Return data from a single poll.
 
 ```json
 {
-	"poll": {
-		"id": "e4365599-0205-4429-9808-ea1f94062a5f",
-		"title": "Qual a melhor linguagem de programação?",
-		"options": [
-			{
-				"id": "4af3fca1-91dc-4c2d-b6aa-897ad5042c84",
-				"title": "JavaScript",
-				"score": 1
-			},
-			{
-				"id": "780b8e25-a40e-4301-ab32-77ebf8c79da8",
-				"title": "Java",
-				"score": 0
-			},
-			{
-				"id": "539fa272-152b-478f-9f53-8472cddb7491",
-				"title": "PHP",
-				"score": 0
-			},
-			{
-				"id": "ca1d4af3-347a-4d77-b08b-528b181fe80e",
-				"title": "C#",
-				"score": 0
-			}
-		]
-	}
+  "poll": {
+    "id": "a4e5688c-8e59-4439-a359-396b28599fd2",
+    "title": "Qual melhor framework Node.js",
+    "options": [
+      {
+        "id": "c45f6219-0c3f-4171-8cb4-eadd822cedff",
+        "title": "Fastify",
+        "score": 1
+      },
+      {
+        "id": "0ef2fcbb-7124-4cbe-8d3b-3f33d8094815",
+        "title": "Express",
+        "score": 8
+      },
+      {
+        "id": "1af5cba1-8482-45a1-a85d-74c9d09df1d4",
+        "title": "NestJS",
+        "score": 0
+      },
+      {
+        "id": "d86c3650-a28a-4592-8481-210e3755890e",
+        "title": "HapiJS",
+        "score": 1
+      }
+    ]
+  }
 }
 ```
 
@@ -91,7 +86,7 @@ Add a vote to specific poll.
 
 ```json
 {
-  "pollOptionId": "31cca9dc-15da-44d4-ad7f-12b86610fe98"
+  "pollOptionId": "0ef2fcbb-7124-4cbe-8d3b-3f33d8094815"
 }
 ```
 
@@ -103,19 +98,10 @@ Add a vote to specific poll.
 
 ```json
 {
-  "pollOptionId": "da9601cc-0b58-4395-8865-113cbdc42089",
-  "votes": 2
+  "pollOptionId": "0ef2fcbb-7124-4cbe-8d3b-3f33d8094815",
+  "votes": 5
 }
 ```
 <!--START_SECTION:footer-->
-
-<br />
-<br />
-
-<p align="center">
-  <a href="https://discord.gg/rocketseat" target="_blank">
-    <img align="center" src="https://storage.googleapis.com/golden-wind/comunidade/rodape.svg" alt="banner"/>
-  </a>
-</p>
 
 <!--END_SECTION:footer-->
